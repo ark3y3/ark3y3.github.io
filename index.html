@@ -19,8 +19,34 @@
     <hr>
     <!-- tot hier dus (<hr> is het streepje) -->
 
+    <p class="txtsign">Sign in</p>
+
+
     <div class="signin-box">
-        <p class="txtsign">Sign in</p>
+        
+        <form class="signin-form">
+            <div class="signin-type">
+                <input type="radio" id="Mentor" name="signin-type" value="Mentor">
+                <label for="Mentor">Mentor</label><br>
+                <input type="radio" id="Mentee" name="signin-type" value="Mentee">
+                <label for="Female">Mentee</label><br>
+            </div>
+
+
+            <div class="logininfo">
+                <label for="name">User ID</label> <br>
+                <input type="text" id="username" name="username" placeholder="Your user ID">
+
+                <br>
+
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" name="password" placeholder="Your password">
+                <br>
+            </div>
+
+            <input type="submit" value="Sign in">
+        </form>
+
         <a href="signup.html" class="signup-button">Sign up</a>
         <a href="signup.html" class="forgot-button">Forgot password?</a>
     </div>
