@@ -37,7 +37,7 @@ body {
     display: block;
     width: 360px;
     height: 420px;
-
+    margin: auto;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     position: absolute;
@@ -67,27 +67,30 @@ body {
 }
 
 .signin-form {
+    margin: auto;
     margin-top: 70px;
 }
 
 .signin-form input[type="submit"] {
     position: absolute;
     bottom: 70px;
-    left: calc(50% - 46px);
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 60px;
-    background-color: rgb(87, 123, 241);
+    background-color: rgb(17, 172, 30);
     padding: 10px 16px 10px;
     font-weight: bold;
 }
 
 .signin-form input[type="submit"]:hover {
-    background-color: rgb(40, 72, 255);
+    background-color: rgb(8, 110, 17);
     cursor: pointer;
 }
 
 .signin-type {
     position: absolute;
-    left: calc(50% - 48px);
+    left: 50%;
+    transform: translate(-50%);
     font-weight: bold;
 }
 
@@ -98,7 +101,8 @@ body {
 .logininfo {
     position: absolute;
     top: 150px;
-    left: calc(50% - 90px)
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .logininfo label {
@@ -108,6 +112,8 @@ body {
 .logininfo input[type="text"], input[type="password"] {
     margin-bottom: 30px;
     margin-top: 8px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(8, 110, 13);
 }
 
 
