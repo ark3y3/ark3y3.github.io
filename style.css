@@ -80,10 +80,19 @@ body {
     font-weight: bold;
 }
 
+.signin-form input[type="submit"]:hover {
+    background-color: rgb(40, 72, 255);
+    cursor: pointer;
+}
+
 .signin-type {
     position: absolute;
     left: calc(50% - 48px);
     font-weight: bold;
+}
+
+.signin-type input:hover {
+    cursor: pointer;
 }
 
 .logininfo {
