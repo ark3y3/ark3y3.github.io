@@ -1,6 +1,6 @@
 .header {
     display: block;
-    height: 80px;
+    height: 60px;
     margin-bottom: 30px;
 }
 
@@ -14,6 +14,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     width: 175px;
 }
 
@@ -21,7 +22,9 @@ p {
     font-family: Arial;
 }
 
+
 .signin-box {
+    display: block;
     width: 320px;
     height: 420px;
 
@@ -39,4 +42,24 @@ p {
     font-size: 30px;
     color: #000;
     transform: translate(0, -85px);
+}
+
+.signin-box .forgot-button {
+    position: absolute;
+    top: 430px;
+    left: 10px;
+}
+
+.signin-box .signup-button {
+    position: absolute;
+    top: 430px;
+    right: 10px;
+}
+
+.signin-box a {
+    color: gray;
+}
+
+.signin-box a:hover {
+    color: rgb(14, 119, 19);
 }
