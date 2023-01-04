@@ -37,7 +37,6 @@ body {
     display: block;
     width: 360px;
     height: 420px;
-    margin: auto;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     position: absolute;
@@ -119,3 +118,35 @@ body {
 
 /* END SIGN IN PAGE */
 
+
+/* MENTOR HOME */
+
+.calendar {
+    display: block;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 50px;
+    column-count: 2;
+}
+
+.calendar input[type="checkbox"] {
+    margin: -1px;
+    height: 50px;
+    width: 50px;
+    background-color: #00f;
+}
+
+
+.calendar input[type="checkbox"]:hover {
+    cursor: pointer;
+ }
+
+.calendar button {
+    width: 100px;
+}
+
+.calendar .column {
+    width: 50px;
+}
+
+/* END MENTOR HOME */
