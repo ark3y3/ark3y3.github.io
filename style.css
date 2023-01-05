@@ -124,7 +124,7 @@ body {
 .calendar {
     display: block;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 150px;
     width: 600px;
 }
 
@@ -145,7 +145,7 @@ body {
     column-width: 300px;
 }
 
-.calendar div[name="text"] {
+.calendar div[name="days"] {
     width: 310px;
     column-count: 5;
     column-width: 20px;
@@ -163,12 +163,17 @@ body {
 .calendar .time {
     position: relative;
     margin: 0;
-    left: -5
+    left: -5;
 }
 
+.calendar div[name="times"]  {
+    position: absolute;
+    top: 267px;
+    left: 60px;
+}
 
-
-
-
+.calendar div[name="times"] p {
+    margin-bottom: 46px;
+}
 
 /* END MENTOR HOME */

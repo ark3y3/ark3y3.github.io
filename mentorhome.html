@@ -16,7 +16,7 @@
 
 
     <form class="calendar">
-        <div name="text">
+        <div name="days">
             <p>Mon</p>
             <p>Tue</p>
             <p>Wed</p>
@@ -24,8 +24,20 @@
             <p>Fri</p>
         </div>
 
+        <div name="times">
+            <p>9:00 am</p>
+            <p>10:00 am</p>
+            <p>11:00 am</p>
+            <p>12:00 pm</p>
+            <p>1:00 pm</p>
+            <p>2:00 pm</p>
+            <p>3:00 pm</p>
+            <p>4:00 pm</p>
+            <p>5:00 pm</p>
+        </div>
+
         <div class="columns" name="9">
-            <input type="checkbox" id="mon">
+            <input type="checkbox" id="mon" name="mon9">
             <input type="checkbox" id="tue">
             <input type="checkbox" id="wed">
             <input type="checkbox" id="thu">
@@ -95,6 +107,8 @@
             <input type="checkbox" id="thu">
             <input type="checkbox" id="fri">
         </div>
+
+        <input type="submit" value="Submit chosen times"/>
 
     </form>
 
