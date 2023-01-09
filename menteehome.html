@@ -13,7 +13,75 @@
         
     </div>
     <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
 
+    <div class="search-bar">
+        <input type="search" id="mentor-search" name="q">
+        <button>Search</button>
+    </div>
+
+    <div class="filters">
+        <fieldset>
+            <legend>Required skills</legend>
+                <input type="checkbox" id="html" name="html" checked>
+                <label for="html">html</label>
+        
+                <input type="checkbox" id="css" name="css">
+                <label for="css">css</label>
+
+                <input type="checkbox" id="javascript" name="javascript">
+                <label for="javascript">javascript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Job category</legend>
+                <input type="checkbox" id="html" name="html" checked>
+                <label for="html">html</label>
+        
+                <input type="checkbox" id="css" name="css">
+                <label for="css">css</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Ratings</legend>
+
+            <label class="rating-label">
+                min rating
+
+                <input
+                  class="rating"
+                  max="5"
+                  oninput="this.style.setProperty('--value', this.value)"
+                  step="0.5"
+                  type="range"
+                  value="1">
+              </label>
+              
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Location</legend>
+            
+            <input type="text" id="location" name="location" placeholder="Delft">
+              
+        </fieldset>
+
+    </div>
+
+    <div class="results">
+        <div class="mentor-result">
+            <div class="result-preview"><img src="images/decoy.jpg" alt="Mentor Profile Picture" width="100"> </div>
+            <div class="result-preview"><h1>mentorname</h1></div>
+            <div class="result-preview"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            
+
+        </div>
+
+        <div class="mentor-result">text</div>
+
+    </div>
 
 </body>
 </html>

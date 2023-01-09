@@ -15,6 +15,7 @@
 
     </div>
     <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
 
     <div>
         <form action="">
@@ -51,21 +52,20 @@
 
             <br>
 
-            <label for="confirmpassword">confirm password</label> <br>
-            <input type="password" id="confirmpassword" name="confirmpassword">
-
-            <br>
-
             <label for="address">address</label> <br>
             <input type="text" id="address" name="address">
 
             <br>
 
+            
             <label for="country">country</label> <br>
-            <select id="country" name="country">
-                <option>select country</option>
-                <option value="AF">Afghanistan</option>
-            </select>
+            <input list="country" name = "datalist">
+  
+            <datalist id="country">
+            <option value="Netherlands" />
+            <option value="Germany" />
+            </datalist>
+
 
             <br>
 
