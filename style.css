@@ -108,7 +108,8 @@ body {
     font-weight: bold;
 }
 
-.logininfo input[type="text"], input[type="password"] {
+.logininfo input[type="text"],
+input[type="password"] {
     margin-bottom: 30px;
     margin-top: 8px;
     border-width: 0 0 2px 0;
@@ -139,7 +140,7 @@ body {
 
 .calendar input[type="checkbox"]:hover {
     cursor: pointer;
- }
+}
 
 .calendar button {
     width: 100px;
@@ -150,3 +151,15 @@ body {
 }
 
 /* END MENTOR HOME */
+
+/* MENTEE HOME */
+
+.filters {
+    outline: 2px solid black;
+    left: 0;
+    white-space: nowrap;
+    width: auto;
+}
+
+
+/* END MENTEE HOME */
