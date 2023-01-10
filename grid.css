@@ -31,7 +31,7 @@ html {
 
 .search-results {
     grid-area: 2 / 2 / 2 / 6;
-    background-color: antiquewhite;
+    background-color: white;
     overflow: auto;
 
 }
@@ -46,22 +46,52 @@ html {
     margin-top: 1%;
     margin-bottom: 2%;
     width: 98%;
-    background-color: linen;
-    overflow: auto;
+    background-color: rgb(157, 175, 154);
+    overflow: hidden;
+
+    max-height: 25%;
 
     box-shadow: inset 0px -2px black;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 10% 2fr 6fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
-.result-preview img {
-    padding: 1%;
-    margin-bottom: 5%;
+
+.result-preview-picture {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.result-preview-picture img {
     border-radius: 50%;
-    float: left;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 5%;
 }
+
+.result-preview-name {
+    grid-area: 1 / 2 / 1 / 2;
+    position: relative;
+    margin-left: 3%;
+    top: 10%;
+}
+
+.result-preview-ratings {
+    grid-area: 2 / 2 / 2 / 2;
+    position: relative;
+    margin-left: 3%;
+    bottom: 30%;
+
+}
+
+.result-preview-avaible-dates {
+    grid-area: 1 / 3 / 1 / 3;
+    position: relative;
+    top: 20%;
+
+}
+
 
 #mentor-search {
     margin-left: 10%;
