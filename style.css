@@ -1,14 +1,13 @@
 .header {
     display: block;
     height: 60px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding: 30px;
+    background-color: rgb(157, 175, 154);
 }
 
-.header p {
-    position: absolute;
-    left: calc(50% - 63px);
-    transform: translate(0%, -110%);
+hr {
+    margin: 0;
+    padding: 0;
 }
 
 .header img {
@@ -21,6 +20,8 @@
 /* !!! */
 body {
     font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
 
 /* SIGN IN PAGE */
@@ -167,7 +168,7 @@ input[type="password"] {
     left: -5;
 }
 
-.calendar div[name="times"]  {
+.calendar div[name="times"] {
     position: absolute;
     top: 267px;
     left: 60px;
