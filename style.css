@@ -125,6 +125,15 @@ input[type="password"] {
 
 .calendar {
     display: block;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.calendar p[name="announce"]{
+    position: relative;
+    font-weight: bold;
+    left: 10px;
 }
 
 .timeframes {
@@ -133,7 +142,8 @@ input[type="password"] {
     height: 400px;
     grid-template-columns: 4fr repeat(5, 1fr);
     grid-template-rows: 1fr;
-
+    position: relative;
+    top: -20px;
 }
 
 
@@ -158,11 +168,11 @@ input[type="password"] {
 .timeframes .coltimeframes p {
     text-align: center;
     position: relative;
+    top: 3px;
 }
 
 .coltimelabels p {
     place-self: center;
-    top: 15px;
 }
 
 /* END MENTOR HOME */
