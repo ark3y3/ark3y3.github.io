@@ -51,8 +51,16 @@ html {
 
     box-shadow: inset 0px -2px black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 1fr;
+}
 
+
+.result-preview img {
+    padding: 1%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    float: left;
 }
 
 #mentor-search {

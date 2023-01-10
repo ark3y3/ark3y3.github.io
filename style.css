@@ -129,10 +129,10 @@ input[type="password"] {
 
 .timeframes {
     display: grid;
-    width: 250px;
+    width: 350px;
     height: 400px;
-    grid-template-columns: 100px repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 4fr repeat(5, 1fr);
+    grid-template-rows: 1fr;
 
 }
 
@@ -143,29 +143,32 @@ input[type="password"] {
     margin: 2px;
 }
 
+.coltimeframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.coltimelabels {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
 .timeframes .coltimeframes p {
     text-align: center;
     position: relative;
-    top: 10px;
 }
 
 .coltimelabels p {
-    text-align: center;
-    position: relative;
+    place-self: center;
     top: 15px;
-    margin-bottom: 32px;
 }
 
 /* END MENTOR HOME */
 
 /* MENTEE HOME */
 
-.filters {
-    outline: 2px solid black;
-    left: 0;
-    white-space: nowrap;
-    width: auto;
-}
 
 
 /* END MENTEE HOME */
