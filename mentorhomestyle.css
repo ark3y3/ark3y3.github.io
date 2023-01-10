@@ -1,0 +1,99 @@
+/* MENTOR HOME */
+
+.mentorhome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calendar {
+    display: block;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.calendar p[name="announce"]{
+    position: relative;
+    font-weight: bold;
+    left: 10px;
+}
+
+.calendar input[type="submit"]{
+    position: relative;
+    font-weight: bold;
+    width: 340px;
+    height: 50px;
+    top: 135px;
+    left: 10px;
+    background-color: rgb(102, 209, 102);
+    border-radius: 5px;
+}
+
+.calendar input[type="submit"]:hover{
+    background-color: green;
+}
+
+.timeframes {
+    display: grid;
+    width: 350px;
+    height: 400px;
+    grid-template-columns: 4fr repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    top: -15px;
+}
+
+
+.timeframes input[type="checkbox"] {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
+.coltimeframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.coltimelabels {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.timeframes .coltimeframes p {
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+
+.coltimelabels p {
+    place-self: center;
+}
+
+.homeheader{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.homeheader p {
+    text-align: center;
+}
+
+.homeheader p[name="announcement"]{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* END MENTOR HOME */
