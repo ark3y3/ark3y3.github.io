@@ -74,6 +74,7 @@
 
 .homeheader{
     position: relative;
+    width: 350px;
     top: 100px;
     left: 50%;
     transform: translate(-50%);
