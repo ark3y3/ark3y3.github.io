@@ -136,6 +136,21 @@ input[type="password"] {
     left: 10px;
 }
 
+.calendar input[type="submit"]{
+    position: relative;
+    font-weight: bold;
+    width: 340px;
+    height: 50px;
+    top: 135px;
+    left: 10px;
+    background-color: rgb(102, 209, 102);
+    border-radius: 5px;
+}
+
+.calendar input[type="submit"]:hover{
+    background-color: green;
+}
+
 .timeframes {
     display: grid;
     width: 350px;
@@ -143,7 +158,7 @@ input[type="password"] {
     grid-template-columns: 4fr repeat(5, 1fr);
     grid-template-rows: 1fr;
     position: relative;
-    top: -20px;
+    top: -15px;
 }
 
 
