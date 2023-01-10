@@ -125,57 +125,35 @@ input[type="password"] {
 
 .calendar {
     display: block;
-    margin-top: 100px;
-    margin-left: 150px;
-    width: 600px;
 }
 
-.calendar input[type="checkbox"] {
-    height: 60px;
-    width: 60px;
-    margin: 0;
-    background-color: #00f;
+.timeframes {
+    display: grid;
+    width: 250px;
+    height: 400px;
+    grid-template-columns: 100px repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
 }
 
 
-.calendar input[type="checkbox"]:hover {
-    cursor: pointer;
+.timeframes input[type="checkbox"] {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
 }
 
-.calendar .columns {
-    column-count: 5;
-    column-width: 300px;
-}
-
-.calendar div[name="days"] {
-    width: 310px;
-    column-count: 5;
-    column-width: 20px;
-}
-
-.calendar p {
-    margin: 0;
-    font-weight: bold;
+.timeframes .coltimeframes p {
+    text-align: center;
     position: relative;
-    left: 13px;
-    bottom: 5px;
-
+    top: 10px;
 }
 
-.calendar .time {
+.coltimelabels p {
+    text-align: center;
     position: relative;
-    margin: 0;
-    left: -5;
-}
-
-.calendar div[name="times"] {
-    position: absolute;
-    top: 267px;
-    left: 60px;
-}
-
-.calendar div[name="times"] p {
-    margin-bottom: 46px;
+    top: 15px;
+    margin-bottom: 32px;
 }
 
 /* END MENTOR HOME */
