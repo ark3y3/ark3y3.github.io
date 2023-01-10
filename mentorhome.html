@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mentorhomestyle.css">
 </head>
 
 <body>
@@ -18,91 +19,110 @@
     <!-- tot hier dus (<hr> is het streepje) -->
 
 
+    <div class="mentorhome">
+        <form class="calendar">
+            <p name="announce">Select your available time slots here:</p>
+            <div class="timeframes">
 
-    <form class="calendar">
-        <div class="timeframes">
+                <div class="coltimelabels" id="time" name="time">
+                    <p>time\day</p>
+                    <p>9:00 AM</p>
+                    <p>10:00 AM</p>
+                    <p>11:00 AM</p>
+                    <p>12:00 PM</p>
+                    <p>1:00 PM</p>
+                    <p>2:00 PM</p>
+                    <p>3:00 PM</p>
+                    <p>4:00 PM</p>
+                    <p>5:00 PM</p>
+                </div>
 
-            <div class="coltimelabels" id="time" name="time">
-                <p>time\day</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
-                <p>9:00 AM</p>
+                <div class="coltimeframes" id="mon" name="mon">
+                    <p>Mon</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="tue" name="tue">
+                    <p>Tue</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="wed" name="wed">
+                    <p>Wed</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="thu" name="thu">
+                    <p>Thu</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="fri" name="fri">
+                    <p>Fri</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
             </div>
 
-            <div class="coltimeframes" id="mon" name="mon">
-                <p>Mon</p>
-                <input type="checkbox" id="9">
-                <input type="checkbox" id="10">
-                <input type="checkbox" id="11">
-                <input type="checkbox" id="12">
-                <input type="checkbox" id="13">
-                <input type="checkbox" id="14">
-                <input type="checkbox" id="15">
-                <input type="checkbox" id="16">
-                <input type="checkbox" id="17">
-            </div>
+            <input type="submit" value="Submit chosen times" />
+        </form>
 
-            <div class="coltimeframes" id="tue" name="tue">
-                <p>Tue</p>
-                <input type="checkbox" id="9">
-                <input type="checkbox" id="10">
-                <input type="checkbox" id="11">
-                <input type="checkbox" id="12">
-                <input type="checkbox" id="13">
-                <input type="checkbox" id="14">
-                <input type="checkbox" id="15">
-                <input type="checkbox" id="16">
-                <input type="checkbox" id="17">
-            </div>
 
-            <div class="coltimeframes" id="wed" name="wed">
-                <p>Wed</p>
-                <input type="checkbox" id="9">
-                <input type="checkbox" id="10">
-                <input type="checkbox" id="11">
-                <input type="checkbox" id="12">
-                <input type="checkbox" id="13">
-                <input type="checkbox" id="14">
-                <input type="checkbox" id="15">
-                <input type="checkbox" id="16">
-                <input type="checkbox" id="17">
-            </div>
-
-            <div class="coltimeframes" id="thu" name="thu">
-                <p>Thu</p>
-                <input type="checkbox" id="9">
-                <input type="checkbox" id="10">
-                <input type="checkbox" id="11">
-                <input type="checkbox" id="12">
-                <input type="checkbox" id="13">
-                <input type="checkbox" id="14">
-                <input type="checkbox" id="15">
-                <input type="checkbox" id="16">
-                <input type="checkbox" id="17">
-            </div>
-
-            <div class="coltimeframes" id="fri" name="fri">
-                <p>Fri</p>
-                <input type="checkbox" id="9">
-                <input type="checkbox" id="10">
-                <input type="checkbox" id="11">
-                <input type="checkbox" id="12">
-                <input type="checkbox" id="13">
-                <input type="checkbox" id="14">
-                <input type="checkbox" id="15">
-                <input type="checkbox" id="16">
-                <input type="checkbox" id="17">
-            </div>
+        <div class="homeheader">
+            <p name="announcement">Welcome to the<br>MentorHomepage</p>
+            <p name="information">Please select your available <br> timeslots on the left of this page.
+                <br>
+                <br>
+                You'll be able to see your <br> upcoming meetings with mentees <br> on the right of this page.
+                <br>
+                <br>
+                Better things are <br> <b>coming soon ;)</b>
+            </p>
         </div>
 
-        <!--<input type="submit" value="Submit chosen times" />-->
-    </form>
+        <div class="requestsbox">
+            <p>d</p>
+        </div>
+    </div>
 
 
 

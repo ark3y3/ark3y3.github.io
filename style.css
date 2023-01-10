@@ -121,51 +121,6 @@ input[type="password"] {
 /* END SIGN IN PAGE */
 
 
-/* MENTOR HOME */
-
-.calendar {
-    display: block;
-}
-
-.timeframes {
-    display: grid;
-    width: 350px;
-    height: 400px;
-    grid-template-columns: 4fr repeat(5, 1fr);
-    grid-template-rows: 1fr;
-
-}
-
-
-.timeframes input[type="checkbox"] {
-    width: 50px;
-    height: 50px;
-    margin: 2px;
-}
-
-.coltimeframes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-}
-
-.coltimelabels {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-}
-
-.timeframes .coltimeframes p {
-    text-align: center;
-    position: relative;
-}
-
-.coltimelabels p {
-    place-self: center;
-    top: 15px;
-}
-
-/* END MENTOR HOME */
 
 /* MENTEE HOME */
 
