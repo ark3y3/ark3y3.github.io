@@ -1,9 +1,25 @@
 /* MENTOR HOME */
 
-.mentorhome {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+@media screen and (max-width: 600px) {
+    .mentorhome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeheader {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        ;
+    }
 }
+
+@media screen and (min-width: 600px) {
+    .mentorhome {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 
 .calendar {
     display: block;
@@ -12,13 +28,13 @@
     margin-top: 50px;
 }
 
-.calendar p[name="announce"]{
+.calendar p[name="announce"] {
     position: relative;
     font-weight: bold;
     left: 10px;
 }
 
-.calendar input[type="submit"]{
+.calendar input[type="submit"] {
     position: relative;
     font-weight: bold;
     width: 340px;
@@ -29,7 +45,7 @@
     border-radius: 5px;
 }
 
-.calendar input[type="submit"]:hover{
+.calendar input[type="submit"]:hover {
     background-color: green;
 }
 
@@ -72,7 +88,7 @@
     place-self: center;
 }
 
-.homeheader{
+.homeheader {
     position: relative;
     width: 350px;
     top: 100px;
@@ -84,7 +100,7 @@
     text-align: center;
 }
 
-.homeheader p[name="announcement"]{
+.homeheader p[name="announcement"] {
     font-size: 30px;
     text-align: center;
     font-weight: bold;
