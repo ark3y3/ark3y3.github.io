@@ -53,12 +53,13 @@
     height: 50px;
     top: 135px;
     left: 10px;
-    background-color: rgb(102, 209, 102);
+    background-color: rgb(136, 175, 129);
     border-radius: 5px;
 }
 
 .calendar input[type="submit"]:hover {
-    background-color: green;
+    background-color: rgb(100, 214, 110);
+    cursor: pointer;
 }
 
 .timeframes {
