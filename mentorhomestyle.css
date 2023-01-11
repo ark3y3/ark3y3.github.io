@@ -1,6 +1,6 @@
 /* MENTOR HOME */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     .mentorhome {
         display: flex;
         flex-direction: column;
@@ -9,24 +9,36 @@
     .homeheader {
         margin-top: 50px;
         margin-bottom: 50px;
-        ;
+    }
+
+    .calendar {
+        display: block;
+        width: 350px;
+        position: relative;
+        left: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transform: translate(-50%);
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
     .mentorhome {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .calendar {
+        display: block;
+        width: 350px;
+        position: relative;
+        left: 50%;
+        top: 60px;
+        transform: translate(-50%);
+    }
+    
 }
 
-
-.calendar {
-    display: block;
-    width: 350px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
 
 .calendar p[name="announce"] {
     position: relative;
