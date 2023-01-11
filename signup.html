@@ -19,13 +19,16 @@
     <!-- tot hier dus (<hr> is het streepje) -->
 
     <div class="container">
+        <p>Please fill out the form below to register a new account</p>
         <form class="formlist" action="">
 
-            <div class="signin-type">
-                <input type="radio" id="mentor" name="sign-up-type" value="HTML" required>
-                <label for="mentor">mentor</label><br>
-                <input type="radio" id="mentee" name="sign-up-type" value="CSS">
-                <label for="mentee">mentee</label>
+            <div class="boxed" name="signin-type">
+                <div style="position: absolute; left: 50%; transform: translate(-50%);">
+                    <input type="radio" id="mentor" name="sign-up-type" value="HTML" required>
+                    <label for="mentor">mentor</label><br>
+                    <input type="radio" id="mentee" name="sign-up-type" value="CSS">
+                    <label for="mentee">mentee</label>
+                </div>
             </div>
 
             <br>
@@ -84,17 +87,21 @@
             <br>
 
             <label for="description">bio (short desctiption)</label> <br>
-            <input type="text" id="description" name="description" required>
+            <textarea type="text" id="description" name="description" required></textarea>
 
             <br>
 
-            <label for="sex">sex</label><br>
-            <input type="radio" id="Male" name="sex" value="Male" required>
-            <label for="Male">male</label><br>
-            <input type="radio" id="Female" name="sex" value="Female">
-            <label for="Female">female</label><br>
-            <input type="radio" id="Other" name="sex" value="Other">
-            <label for="Other">other</label><br>
+            <div class="boxed" name="gender">
+                <div style="position: absolute; left: 50%; transform: translate(-50%);">
+                    <label for="sex">sex</label><br>
+                    <input type="radio" id="Male" name="sex" value="Male" required>
+                    <label for="Male">male</label><br>
+                    <input type="radio" id="Female" name="sex" value="Female">
+                    <label for="Female">female</label><br>
+                    <input type="radio" id="Other" name="sex" value="Other">
+                    <label for="Other">other</label><br>
+                </div>
+            </div>
 
 
 

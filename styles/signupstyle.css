@@ -3,13 +3,24 @@
 .container {
     display: block;
     width: 360px;
-    height: 700px;
+    height: 1150px;
     position: relative;
     left: 50%;
-    margin-top: 50px;
+    margin-top: 120px;
     transform: translate(-50%);
     border-style: solid;
     border-radius: 20px;
+}
+
+.container p {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -90px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .formlist {
@@ -20,28 +31,48 @@
 }
 
 
-.signin-type {
-    position: relative;
+.boxed {
+    display: block;
+    height: 40px;;
 }
 
 input[type="submit"] {
     position: relative;
+    width: 100px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 60px;
     background-color: rgb(136, 175, 129);
     padding: 10px 16px 10px;
     font-weight: bold;
+    margin-top: 40px;
+    transition: all 0.2s;
 }
 
 input[type="submit"]:hover {
     background-color: rgb(100, 214, 110);
     cursor: pointer;
+    width: 150px;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"] ,
+input[list="country"] {
     border-width: 0 0 2px 0;
     border-color: rgb(8, 110, 13);
+    margin-bottom: 40px;
+}
+
+textarea {
+    border-width: 2px;
+    border-color: rgb(8, 110, 13);
+    height: 80px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    resize: none;
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(136, 175, 129);
 }
