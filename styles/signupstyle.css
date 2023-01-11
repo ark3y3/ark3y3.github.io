@@ -2,18 +2,46 @@
 
 .container {
     display: block;
-    width: 400px;
-    height: auto;
+    width: 360px;
+    height: 700px;
     position: relative;
     left: 50%;
+    margin-top: 50px;
     transform: translate(-50%);
+    border-style: solid;
+    border-radius: 20px;
 }
 
 .formlist {
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%);
+}
+
+
+.signin-type {
+    position: relative;
+}
+
+input[type="submit"] {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    width: auto;
-    max-width: 200px;
+    border-radius: 60px;
+    background-color: rgb(136, 175, 129);
+    padding: 10px 16px 10px;
+    font-weight: bold;
 }
 
+input[type="submit"]:hover {
+    background-color: rgb(100, 214, 110);
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border-width: 0 0 2px 0;
+    border-color: rgb(8, 110, 13);
+}

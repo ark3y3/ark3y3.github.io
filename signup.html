@@ -20,47 +20,50 @@
 
     <div class="container">
         <form class="formlist" action="">
-            <input type="radio" id="mentor" name="sign-up-type" value="HTML">
-            <label for="mentor">mentor</label><br>
-            <input type="radio" id="mentee" name="sign-up-type" value="CSS">
-            <label for="mentee">mentee</label>
+
+            <div class="signin-type">
+                <input type="radio" id="mentor" name="sign-up-type" value="HTML" required>
+                <label for="mentor">mentor</label><br>
+                <input type="radio" id="mentee" name="sign-up-type" value="CSS">
+                <label for="mentee">mentee</label>
+            </div>
 
             <br>
 
             <!-- gebruik placeholder attribute voor een placeholder-->
             <label for="userid">user-id</label> <br>
-            <input type="text" id="userid" name="userid" placeholder="Choose a user-id">
+            <input type="text" id="userid" name="userid" placeholder="Choose a user-id" required>
 
             <br>
 
             <label for="name">name</label> <br>
-            <input type="text" id="username" name="username" placeholder="Your name">
+            <input type="text" id="username" name="username" placeholder="Your name" required>
 
             <br>
 
             <label for="useremail">email</label> <br>
-            <input type="email" id="useremail" name="useremail" placeholder="Your e-mail address">
+            <input type="email" id="useremail" name="useremail" placeholder="Your e-mail address" required>
 
             <br>
 
             <label for="password">password</label> <br>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required>
 
             <br>
 
             <label for="confirmpassword">confirm password</label> <br>
-            <input type="password" id="confirmpassword" name="confirmpassword">
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
 
             <br>
 
             <label for="address">address</label> <br>
-            <input type="text" id="address" name="address">
+            <input type="text" id="address" name="address" required>
 
             <br>
 
             
             <label for="country">country</label> <br>
-            <input list="country" name = "datalist">
+            <input list="country" name = "datalist" required>
   
             <datalist id="country">
             <option value="Netherlands" />
@@ -71,22 +74,22 @@
             <br>
 
             <label for="zipcode">zipcode</label> <br>
-            <input type="text" id="zipcode" name="zipcode">
+            <input type="text" id="zipcode" name="zipcode" required>
 
             <br>
 
             <label for="language">language</label> <br>
-            <input type="text" id="language" name="language">
+            <input type="text" id="language" name="language" required>
 
             <br>
 
             <label for="description">bio (short desctiption)</label> <br>
-            <input type="text" id="description" name="description">
+            <input type="text" id="description" name="description" required>
 
             <br>
 
             <label for="sex">sex</label><br>
-            <input type="radio" id="Male" name="sex" value="Male">
+            <input type="radio" id="Male" name="sex" value="Male" required>
             <label for="Male">male</label><br>
             <input type="radio" id="Female" name="sex" value="Female">
             <label for="Female">female</label><br>
