@@ -5,6 +5,7 @@
     top: 20px;
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
     color: #000;
 }
 
@@ -14,11 +15,11 @@
     height: 420px;
     border-style: solid;
     border-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 240px;
-    left: calc(50% - 180px);
+    position: relative;
+    top: 10px;
+    left: calc(50%);
+    transform: translate(-50%);
     border-radius: 20px;
-    transition: bottom 1s;
 }
 
 .signin-box .forgot-button {
@@ -90,6 +91,11 @@ input[type="password"] {
     margin-top: 8px;
     border-width: 0 0 2px 0;
     border-color: rgb(8, 110, 13);
+}
+
+.redirect {
+    position: relative;
+    margin-top: 100px;
 }
 
 

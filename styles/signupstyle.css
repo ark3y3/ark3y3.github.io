@@ -1,0 +1,19 @@
+
+
+.container {
+    display: block;
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.formlist {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+    max-width: 200px;
+}
+
