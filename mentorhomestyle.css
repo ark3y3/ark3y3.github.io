@@ -230,14 +230,15 @@ p[name="meetings"] {
     top: 10px;
     margin-left: 5px;
     border-radius: 5px;
-    border-style: hidden;
+    border-style:ridge;
+    border-width: 2px;
 }
 
 .meeting button:hover{
     background-color: rgb(100, 214, 110);
-    transform: -1px, -1px;
-    width: 52px;
-    height: 32px;
+    width: 56px;
+    cursor: pointer;
+
 }
 
 
