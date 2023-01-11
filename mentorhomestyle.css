@@ -156,15 +156,19 @@ p[name="meetings"] {
 
 
 .meeting {
-    display: block;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px;
+
     width: 300px;
-    height: 100px;
+    min-height: 130px;
+    height: auto;
     background-color: rgb(136, 175, 129);
     position: relative;
     left: 10px;
     border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .requests {
@@ -176,16 +180,70 @@ p[name="meetings"] {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
 
+.meeting img {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    height: 50px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 5px;
+}
 
+.meeting p {
+    position: relative;
+    text-align: center;
+}
+
+.meeting p[name="name"]{
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    top: 5px;
+}
+
+.meeting p[name="date"]{
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting p[name="description"]{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting button {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+.meeting button:hover{
+    background-color: rgb(100, 214, 110);
+    transform: -1px, -1px;
+    width: 52px;
+    height: 32px;
 }
 
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    position: relative;
-    
+    width: 10px; 
   }
   
   /* Track */
@@ -198,8 +256,9 @@ p[name="meetings"] {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgb(136, 175, 129);
     border-radius: 20px;
+
   }
   
   /* Handle on hover */
