@@ -32,6 +32,31 @@ body {
     margin-bottom: 50px;
 }
 
+/* CURSOR STYLE width */
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 20px;
+    position: relative;
+    left: 10px
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(136, 175, 129);
+    border-radius: 20px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 
 
 
