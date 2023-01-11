@@ -242,12 +242,16 @@ p[name="meetings"] {
     cursor: pointer;
 }
 
+.meeting span{
+    position: relative;
+}
+
 .meeting span::after{
         content: '\21D3';
         position: absolute;
         opacity: 0;
-        top: 6px;
-        right: -20px;
+        top: 0px;
+        right: -15px;
         transition: 0.1s;
 }
 
@@ -261,7 +265,7 @@ button:hover span {
 
 button:hover span:after {
     opacity: 1;
-    right: 5px;
+    right: -8px;
   }
 
 
