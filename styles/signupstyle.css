@@ -39,6 +39,7 @@
 input[type="submit"] {
     position: relative;
     width: 100px;
+    height: 44px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 60px;
@@ -46,13 +47,12 @@ input[type="submit"] {
     padding: 10px 16px 10px;
     font-weight: bold;
     margin-top: 40px;
-    transition: all 0.2s;
 }
 
 input[type="submit"]:hover {
     background-color: rgb(100, 214, 110);
     cursor: pointer;
-    width: 150px;
+    width: 110px;
 }
 
 input[type="text"],
