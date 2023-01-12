@@ -61,7 +61,39 @@ body {
 
 
 
+@media screen and (min-width: 900px) {
+  .profilename {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-rows: 1fr;
+    width: 300px;
+    height: 70px;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
 
+  .profilename img {
+    grid-column: 2;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .profilename span {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
 
 /* MENTEE HOME */
 
