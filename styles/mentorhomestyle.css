@@ -237,35 +237,34 @@ p[name="meetings"] {
 }
 
 .meeting button:hover{
-    background-color: rgb(100, 214, 110);
     width: 56px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .meeting span{
     position: relative;
+    transition: 0.2s;
+    left: 4px;
 }
 
 .meeting span::after{
         content: '\21D3';
-        position: absolute;
+        position: relative;
         opacity: 0;
-        top: 0px;
-        right: -15px;
-        transition: 0.1s;
+        right: -5px;
+        transition: 0.3s;
 }
 
 button:hover span {
-    padding-right: 40px;
-}
-
-.meeting button:active {
-    transform: 40px;
+    padding-right: 15px;
+    transition: 1s;
 }
 
 button:hover span:after {
     opacity: 1;
-    right: -8px;
+    left: 3px;
+    display: unset;
   }
 
 

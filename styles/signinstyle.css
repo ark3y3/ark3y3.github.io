@@ -51,6 +51,8 @@
     position: absolute;
     bottom: 70px;
     left: 50%;
+    width: 100px;
+    height: 44px;
     transform: translate(-50%);
     border-radius: 60px;
     background-color: rgb(136, 175, 129);
@@ -61,7 +63,9 @@
 .signin-form input[type="submit"]:hover {
     background-color: rgb(100, 214, 110);
     cursor: pointer;
+    width: 110px;
 }
+
 
 .signin-type {
     position: absolute;

@@ -20,8 +20,8 @@ hr {
 /* !!! */
 
 
-*:hover {
-    transition: 0.25s;
+input[type="submit"], button {
+    transition: all 0.25s;
 }
 
 
