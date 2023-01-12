@@ -51,7 +51,6 @@
 .calendar p[name="announce"] {
     position: relative;
     font-weight: bold;
-    left: 10px;
 }
 
 .calendar input[type="submit"] {
