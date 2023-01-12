@@ -249,10 +249,10 @@ p[name="meetings"] {
 }
 
 .meeting span::after{
-        content: '\21D3';
+        content: '\25bc';
         position: relative;
         opacity: 0;
-        right: -5px;
+        right: -3px;
         transition: 0.3s;
 }
 
@@ -263,7 +263,7 @@ button:hover span {
 
 button:hover span:after {
     opacity: 1;
-    left: 3px;
+    left: 2px;
     display: unset;
   }
 
