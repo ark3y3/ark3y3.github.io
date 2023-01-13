@@ -125,7 +125,7 @@
                 <br>
                 <br>
                 The first 2 info buttons in the<br>meetings section
-                work. <span onclick="openpopup()"><b>Test pop-up</b></span><br>
+                work. <br><span onclick="openpopup()"><b>Click here to test pop-up!!!</b></span><br>
                 Better things are <br> <b>coming soon ;)</b>
             </p>
         </div>
@@ -210,8 +210,27 @@
     </div>
 
     <div class="popup" id="popup">
-        <span>This is a popup, black circle on the right is closing button</span>
-        <img src="images/decoy.jpg" name="close" onclick="closepopup()">
+        <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
+        <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
+        <div name="info">
+            <span name="name">[Firstname Lastname] (Mentee)</span>
+            <span name="date">Meeting request
+                <br>Time: 16:00 till 17:00
+                <br>Date: December 11 2022
+            </span>
+            <span name="description">
+                <b>Description:</b> Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor. 
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </span>
+            <textarea placeholder="Purpose of meeting"></textarea>
+        </div>
+        <div name="buttons">
+            <button name="accept" onclick=closepopup()>Accept</button>
+            <button name="decline" onclick=closepopup()>Decline</button>
+        </div>
     </div>
 
     <script>

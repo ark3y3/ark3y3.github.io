@@ -26,16 +26,21 @@
     }
 
     .popup {
-        display: block;
         width: 350px;
-        height: 500px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: black;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgb(136, 175, 129);
+    }
+
+    .popup div[name="info"]{
+        width: 300px;
+    }
+
+    .popup textarea {
+        width: 280px;
+        height: 60px;
+    }
+
+    .popup div[name="buttons"] button{
+        width: 70px;
+        height: 40px;
     }
 
 }
@@ -61,24 +66,43 @@
     }
 
     .popup {
-        display: block;
         width: 700px;
-        height: 500px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: black;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgb(136, 175, 129);
+    }
+
+    .popup div[name="info"]{
+        width: 600px;
+    }
+
+    .popup textarea{
+        width: 580px;
+        height: 50px;
+    }
+
+    .popup div[name="buttons"] button{
+        width: 100px;
+        height: 50px;
     }
 
 }
 
+/*============================================POPUPS==============================================*/
 .popup {
-    display: none;
     position: fixed;
+    display: block;
+    min-height: 500px;
+    max-height: 800px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(136, 175, 129);
+
+    
+    display: none;
 }
+
 
 .popup img[name="close"]:hover {
     cursor: pointer;
@@ -92,7 +116,88 @@
     border-radius: 50px;
 }
 
+.popup img[name="pfp"]{
+    display: block;
+    width: 100px;
+    position: relative;
+    border-radius: 50px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    margin-bottom: 40px;
+}
 
+.popup div[name="info"]{
+    display: block;
+    max-height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 90px;
+    overflow: auto;
+}
+
+.popup span {
+    display: block;
+    text-align: center;
+}
+
+.popup span[name="date"], span[name="name"]{
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup span[name="date"]{
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup textarea{
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    resize: none;
+}
+
+.popup div[name="buttons"]{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.popup div[name="buttons"] button{
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.popup div[name="buttons"] button:hover{
+    cursor: pointer;
+}
+
+.popup button[name="accept"]{
+    background-color: rgb(87, 223, 87);
+}
+
+.popup button[name="accept"]:hover{
+    background-color: rgb(64, 173, 64);
+}
+
+.popup button[name="decline"]{
+    background-color: rgb(226, 68, 40);
+}
+
+.popup button[name="decline"]:hover{
+    background-color: rgb(179, 53, 31);
+}
+
+
+/*============================================CALENDAR==============================================*/
 .calendar p[name="announce"] {
     position: relative;
     font-weight: bold;
@@ -153,6 +258,8 @@
     place-self: center;
 }
 
+
+/*============================================HOMEHEADER==============================================*/
 .homeheader {
     position: relative;
     width: 350px;
@@ -178,9 +285,8 @@
 
 
 
-/* REQUESTS */
 
-
+/*============================================REQUESTS/MEETINGS==============================================*/
 .requestsbox {
     display: block;
     width: 350px;
