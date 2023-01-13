@@ -2,12 +2,13 @@
 
 @media screen and (max-width: 1099px) {
     .mentorhome {
-        display: flex;
-        flex-direction: column;
+        display: grid;
     }
 
     .homeheader {
+        display: block;
         margin-top: 50px;
+        margin-bottom: 40px;
     }
 
     .calendar {
@@ -22,6 +23,19 @@
 
     .requestsbox {
         margin-top: 80px;
+    }
+
+    .popup {
+        display: block;
+        width: 350px;
+        height: 500px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(136, 175, 129);
     }
 
 }
@@ -59,23 +73,23 @@
         background-color: rgb(136, 175, 129);
     }
 
-    .popup img[name="close"] {
-        width: 30px;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        border-radius: 50px;
-    }
-
-    .popup img[name="close"]:hover {
-        cursor: pointer;
-    }
-
 }
 
 .popup {
     display: none;
     position: fixed;
+}
+
+.popup img[name="close"]:hover {
+    cursor: pointer;
+}
+
+.popup img[name="close"] {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 50px;
 }
 
 
