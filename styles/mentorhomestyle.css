@@ -53,14 +53,13 @@
         border-style: solid;
         border-radius: 10px;
         border-color: black;
-        position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         background-color: rgb(136, 175, 129);
     }
 
-    .popup img[name="close"]{
+    .popup img[name="close"] {
         width: 30px;
         position: absolute;
         right: 5px;
@@ -76,6 +75,7 @@
 
 .popup {
     display: none;
+    position: fixed;
 }
 
 

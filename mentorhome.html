@@ -18,7 +18,9 @@
     <!-- tot hier dus (<hr> is het streepje) -->
 
     <div class="profilename">
-        <span><nobr>[FIRSTNAME LASTNAME]</nobr></span>
+        <span>
+            <nobr>[FIRSTNAME LASTNAME]</nobr>
+        </span>
         <img src="images/decoy.jpg" alt="profilepixture">
     </div>
 
@@ -114,7 +116,7 @@
         <div class="homeheader">
             <p name="announcement">Welcome to the<br>MentorHomepage</p>
             <p name="information">Please select your available <br> timeslots on the left/top of this page.
-                <br> You can select 1 hour timeslots, if you <br> need a shorter timeslot, 
+                <br> You can select 1 hour timeslots, if you <br> need a shorter timeslot,
                 <br> then you can adress this in the
                 <br> meeting confirmation.
                 <br>
@@ -122,8 +124,8 @@
                 You'll be able to see your <br> upcoming meetings with mentees <br> on the right/bottom of this page.
                 <br>
                 <br>
-                The first info button in the<br>meetings section
-                works. <span onclick="openpopup()"><b>Test pop-up</b></span><br>
+                The first 2 info buttons in the<br>meetings section
+                work. <span onclick="openpopup()"><b>Test pop-up</b></span><br>
                 Better things are <br> <b>coming soon ;)</b>
             </p>
         </div>
@@ -134,58 +136,77 @@
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
-                    <button onclick="openclosedesc()"><span>info</span></button>
-                    <p name="description" id="description"><b>Description:</b> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>   
+                    <button onclick="closedesc('description')"><span>info</span></button>
+                    <p name="description" id="description"><b>Description:</b> Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                    <button onclick="closedesc('description2')"><span>info</span></button>
+                    <p name="description" id="description2" style="display: none;">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
 
                 <div class="meeting">
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
                     <button><span>info</span></button>
-                    <p name="description" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>     
+                    <p name="description" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
 
                 <div class="meeting">
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
                     <button><span>info</span></button>
-                    <p name="description" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>    
+                    <p name="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        Nulla consequat massa quis enim.</p>
+                </div>
 
                 <div class="meeting">
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
                     <button><span>info</span></button>
-                    <p name="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>   
+                    <p name="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        Nulla consequat massa quis enim.</p>
+                </div>
 
                 <div class="meeting">
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
                     <button><span>info</span></button>
-                    <p name="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>   
-
-                <div class="meeting">
-                    <img src="images/decoy.jpg" alt="pf">
-                    <p name="name">[FirstName LastName]</p>
-                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
-                    <button><span>info</span></button>
-                    <p name="description" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                </div>   
+                    <p name="description" style="display: none;">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
 
 
 
-            
-           </div>
 
-           <p name="meetings">YOUR MEETINGS</p>
+            </div>
+
+            <p name="meetings">YOUR MEETINGS</p>
         </div>
-        
+
     </div>
 
     <div class="popup" id="popup">
@@ -197,16 +218,20 @@
         var description = document.getElementById("description");
         var popup = document.getElementById("popup");
 
-        function openclosedesc(){
-            if(description.style.display == "none"){description.style.display = "unset";}
-            else{description.style.display = "none";}  
+        function closedesc(id) {
+            if (document.getElementById(id).style.display == "none") {
+                document.getElementById(id).style.display = "unset";
+            }
+            else {
+                document.getElementById(id).style.display = "none";
+            }
         }
 
-        function openpopup(){
-            popup.style.display = "unset"; 
+        function openpopup() {
+            popup.style.display = "unset";
         }
 
-        function closepopup(){
+        function closepopup() {
             popup.style.display = "none";
         }
     </script>
