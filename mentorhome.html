@@ -122,6 +122,8 @@
                 You'll be able to see your <br> upcoming meetings with mentees <br> on the right/bottom of this page.
                 <br>
                 <br>
+                The first info button in the<br>meetings section
+                works. <span onclick="openpopup()"><b>Test pop-up</b></span><br>
                 Better things are <br> <b>coming soon ;)</b>
             </p>
         </div>
@@ -132,8 +134,8 @@
                     <img src="images/decoy.jpg" alt="pf">
                     <p name="name">[FirstName LastName]</p>
                     <p name="date">22-12-2022 at 15:00 till 16:00</p>
-                    <button><span>info</span></button>
-                    <p name="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <button onclick="openclosedesc()"><span>info</span></button>
+                    <p name="description" id="description"><b>Description:</b> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                 </div>   
 
                 <div class="meeting">
@@ -185,6 +187,29 @@
         </div>
         
     </div>
+
+    <div class="popup" id="popup">
+        <span>This is a popup, black circle on the right is closing button</span>
+        <img src="images/decoy.jpg" name="close" onclick="closepopup()">
+    </div>
+
+    <script>
+        var description = document.getElementById("description");
+        var popup = document.getElementById("popup");
+
+        function openclosedesc(){
+            if(description.style.display == "none"){description.style.display = "unset";}
+            else{description.style.display = "none";}  
+        }
+
+        function openpopup(){
+            popup.style.display = "unset"; 
+        }
+
+        function closepopup(){
+            popup.style.display = "none";
+        }
+    </script>
 
 
 

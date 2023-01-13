@@ -23,6 +23,7 @@
     .requestsbox {
         margin-top: 80px;
     }
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -45,6 +46,36 @@
         margin-top: 90px;
     }
 
+    .popup {
+        display: block;
+        width: 700px;
+        height: 500px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(136, 175, 129);
+    }
+
+    .popup img[name="close"]{
+        width: 30px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border-radius: 50px;
+    }
+
+    .popup img[name="close"]:hover {
+        cursor: pointer;
+    }
+
+}
+
+.popup {
+    display: none;
 }
 
 
@@ -125,6 +156,10 @@
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+}
+
+.homeheader span:hover {
+    cursor: pointer;
 }
 
 
