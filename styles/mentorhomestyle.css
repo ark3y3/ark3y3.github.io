@@ -27,10 +27,13 @@
 
     .popup {
         width: 350px;
+        min-height: 400px;
+        max-height: 500px;
     }
 
     .popup div[name="info"]{
         width: 300px;
+        max-height: 200px;
     }
 
     .popup textarea {
@@ -67,10 +70,12 @@
 
     .popup {
         width: 700px;
+        height: 500px;
     }
 
     .popup div[name="info"]{
         width: 600px;
+        max-height: 260px;
     }
 
     .popup textarea{
@@ -89,8 +94,6 @@
 .popup {
     position: fixed;
     display: block;
-    min-height: 500px;
-    max-height: 800px;
     border-style: solid;
     border-radius: 10px;
     border-color: black;
@@ -99,7 +102,7 @@
     transform: translate(-50%, -50%);
     background-color: rgb(136, 175, 129);
 
-    
+
     display: none;
 }
 
@@ -129,7 +132,6 @@
 
 .popup div[name="info"]{
     display: block;
-    max-height: 500px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
