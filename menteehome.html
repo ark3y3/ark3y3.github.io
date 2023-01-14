@@ -115,5 +115,42 @@
         
         <a href="menteeclickpage.html">Click Page</a><br>
       </div> 
+
+
+    <div class="popup" id="popup">
+        <div class="popup-close">
+            <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
+        </div>
+            
+        <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
+
+        <div class="popup-name">
+            <h1>Mentor name</h1>
+        </div>
+            
+        <div class="popup-info">
+            <label for="meetingdate">Date</label>     
+            <br>   
+            <input type="date" id="meetingdate" name="meetingdate">
+        </div>
+
+        <div class="popup-info">
+            <label for="meetingtime">Time</label>       
+            <br>    
+            <input type="time" id="meetingtime" name="meetingtime">
+        </div>
+
+        <div class="popup-info">
+            <label for="purpose">Purpose</label>
+            <br>   
+            <textarea placeholder="Purpose of the meeting"></textarea>
+        </div>
+
+        <div class="button">
+            <button name="Request" onclick=closepopup()>Request</button>
+        </div>
+        
+    </div>
+
 </body>
 </html>

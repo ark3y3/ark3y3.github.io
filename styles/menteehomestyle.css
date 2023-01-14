@@ -222,3 +222,109 @@
 .mentor-result:hover {
     cursor: pointer;
 }
+
+
+/* ============= POP UP ========== */
+
+.popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(136, 175, 129);
+    min-width: 25%;
+
+    display: unset;
+}
+
+
+.popup img[name="close"]:hover {
+    cursor: pointer;
+}
+
+.popup img[name="close"] {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 50px;
+}
+
+.popup img[name="pfp"] {
+    display: block;
+    width: 100px;
+    position: relative;
+    border-radius: 50px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+}
+
+.popup-name {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+.popup-info {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.popup-info input {
+    width: 30%;
+    height: 20px;
+    border-radius: 15px;
+    border: 3px gray solid;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px;
+}
+
+.popup-info textarea {
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px gray solid;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px;
+}
+
+
+.button {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.button button {
+    border-radius: 5px;
+    width: 25%;
+    height: 35px;
+    font-weight: bold;
+}
+
+
+.button button:hover {
+    cursor: pointer;
+}
+
+.button button {
+    background-color: rgb(87, 223, 87);
+}
+
+.button button:hover {
+    background-color: rgb(64, 173, 64);
+}
