@@ -17,13 +17,14 @@
         <a href="index.html"><img src="images/logo+text.png" alt="Logo"></a>
         
     </div>
-    <hr>
-    <!-- tot hier dus (<hr> is het streepje) -->
-
     <div class="profilename">
         <span><nobr>[FIRSTNAME LASTNAME]</nobr></span>
         <img src="images/decoy.jpg" alt="profilepixture">
     </div>
+    <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
+
+    
 
 
     
@@ -88,7 +89,7 @@
             <button id="mentor-search-button" >Search</button>
         </div>
 
-        <div class="search-results">
+        <div class="search-results" onclick="openpopup()">
             <button class="mentor-result">
                 <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
                 <div class="result-preview-name"><h1>mentorname</h1></div>
@@ -96,14 +97,14 @@
                 <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
             </button>
 
-            <button class="mentor-result">
+            <button class="mentor-result" onclick="openpopup()">
                 <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
                 <div class="result-preview-name"><h1>mentorname</h1></div>
                 <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
                 <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
             </button>
             
-            <button class="mentor-result">
+            <button class="mentor-result" onclick="openpopup()">
                 <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
                 <div class="result-preview-name"><h1>mentorname</h1></div>
                 <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
@@ -111,9 +112,57 @@
             </button>
 
         </div>
-
         
-        <a href="menteeclickpage.html">Click Page</a><br>
       </div> 
+
+
+    <div class="popup" id="popup">
+        <div class="popup-close">
+            <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
+        </div>
+            
+        <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
+
+        <div class="popup-name">
+            <h1>Mentor name</h1>
+        </div>
+            
+        <div class="popup-info">
+            <label for="meetingdate">Date</label>     
+            <br>   
+            <input type="date" id="meetingdate" name="meetingdate">
+        </div>
+
+        <div class="popup-info">
+            <label for="meetingtime">Time</label>       
+            <br>    
+            <input type="time" id="meetingtime" name="meetingtime">
+        </div>
+
+        <div class="popup-info">
+            <label for="purpose">Purpose</label>
+            <br>   
+            <textarea placeholder="Purpose of the meeting"></textarea>
+        </div>
+
+        <div class="button">
+            <button name="Request" onclick=closepopup()>Request</button>
+        </div>
+        
+    </div>
+
+    <script>
+        var popup = document.getElementById("popup");
+
+
+        function openpopup() {
+            popup.style.display = "unset";
+        }
+
+        function closepopup() {
+            popup.style.display = "none";
+        }
+    </script>
+
 </body>
 </html>
