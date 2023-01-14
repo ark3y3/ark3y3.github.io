@@ -10,10 +10,14 @@ hr {
     padding: 0;
 }
 
-.header img {
-    position: relative;
+.header a {
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
+    
+}
+
+.header img {
     width: 175px;
 }
 
