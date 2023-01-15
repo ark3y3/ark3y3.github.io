@@ -3,14 +3,20 @@ hr {
   padding: 0;
 }
 
-.header a {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-
+.header{
+  height: 120px;
+  background-color: rgb(136, 175, 129);
 }
 
-.header img {
+.header a {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header img, a {
   width: 175px;
 }
 
@@ -64,9 +70,6 @@ body {
 
   .header {
     display: block;
-    height: 60px;
-    padding: 30px;
-    background-color: rgb(136, 175, 129);
   }
 
   .profilename {
@@ -106,8 +109,6 @@ body {
 @media screen and (max-width: 1099px) {
   .header {
     display: block;
-    height: 60px;
-    padding-top: 30px;
     background-color: rgb(136, 175, 129);
   }
 
@@ -117,7 +118,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 90px 1fr;
-    width: 110%;
     height: 100px;
     flex-direction: row;
     position: relative;
