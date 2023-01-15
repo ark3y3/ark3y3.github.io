@@ -229,8 +229,7 @@
 
 .popup {
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    display: none;
 
     border-style: solid;
     border-radius: 10px;
@@ -239,9 +238,8 @@
     top: 40%;
     transform: translate(-50%, -50%);
     background-color: rgb(136, 175, 129);
-    min-width: 25%;
+    width: 450px;
 
-    display: none;
 }
 
 
@@ -265,49 +263,50 @@
     left: 50%;
     top: 20px;
     transform: translate(-50%);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.popup hr {
+    margin: 10px;
 }
 
 .popup-name {
     display: block;
     position: relative;
     text-align: center;
-    margin-bottom: 5px;
     overflow: auto;
+}
+
+.popup-name h1 {
+    margin-bottom: 0px;
+}
+
+.popup-name h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .popup-info {
     display: block;
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
     overflow: auto;
 }
 
-.popup-info input {
-    width: 30%;
-    height: 20px;
-    border-radius: 15px;
-    border: 3px gray solid;
-    font-size: 17px;
-    text-align: center;
-    padding: 7px;
+.popup-info p {
+    margin: 0px;
+    margin-top: 2px;
 }
 
-.popup-info textarea {
-    width: 50%;
-    height: 50px;
-    border-radius: 15px;
-    border: 3px gray solid;
-    font-size: 17px;
-    text-align: center;
-    padding: 7px;
+
+.popup-info strong {
+    font-size: 20px;
 }
 
 
 .button {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .button button {
@@ -328,4 +327,14 @@
 
 .button button:hover {
     background-color: rgb(64, 173, 64);
+}
+
+@media screen and (max-width: 1099px) {
+    .popup {
+
+        width: 350px;
+
+
+    }
+
 }
