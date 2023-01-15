@@ -170,14 +170,17 @@
 
     </div>
 
+
+
+    <!---------------------------------------------- POPUP ----------------------------------->
     <div class="popup" id="popup">
         <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
         <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
         <div name="info">
             <span name="name">[Firstname Lastname] (Mentee)</span>
             <span name="date">Meeting request
-                <br>Time: 16:00 till 17:00
-                <br>Date: December 11 2022
+                <br>Requested time: 16:00 till 17:00
+                <br>Requested date: December 11 2022
             </span>
             <span name="description">
                 <b>Description:</b> Lorem ipsum dolor sit amet, consectetuer
@@ -187,13 +190,25 @@
                 pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 
             </span>
-            <textarea placeholder="Purpose of meeting"></textarea>
-        </div>
-        <div name="buttons">
-            <button name="accept" onclick=closepopup()>Accept</button>
-            <button name="decline" onclick=closepopup()>Decline</button>
-        </div>
+
+
+        <form> <!-- Start form for the accept button -->
+                <textarea placeholder="Purpose of meeting" required></textarea>
+                <p>Please select your chosen timeslot below...</p>
+                <div name="chosentimeslot">
+                    <div><label>From: </label><input type="time" required></div>
+                    <div><label>Till: </label><input type="time" required></div>
+                </div>
+        </div> <!-- Note that above items are inside a scroll box!!!!-->
+            <div name="buttons">
+                <button name="accept" type="submit">Accept</button>
+                <button name="decline" onclick=closepopup()>Decline</button>
+            </div>
+        </form>
+
+
     </div>
+    <!---------------------------------------------- END POPUP ----------------------------------->
 
     <script>
         var description = document.getElementById("description");

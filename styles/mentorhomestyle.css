@@ -22,7 +22,7 @@
     }
 
     .requestsbox {
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     .popup {
@@ -37,13 +37,23 @@
     }
 
     .popup textarea {
-        width: 280px;
+        width: 260px;
         height: 60px;
     }
 
-    .popup div[name="buttons"] button {
+    .popup div[name="buttons"] button{
         width: 70px;
         height: 40px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: fit-content;  
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+    .popup div[name="chosentimeslot"] div{
+        margin-top: 10px;
     }
 
 }
@@ -73,19 +83,25 @@
         height: 500px;
     }
 
-    .popup div[name="info"] {
+    .popup div[name="info"]{
         width: 600px;
         max-height: 260px;
     }
 
-    .popup textarea {
-        width: 580px;
+    .popup textarea{
+        width: 500px;
         height: 50px;
     }
 
-    .popup div[name="buttons"] button {
+    .popup div[name="buttons"] button{
         width: 100px;
         height: 50px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: 350px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
 }
@@ -101,8 +117,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(136, 175, 129);
-
-
     display: none;
 }
 
@@ -119,7 +133,7 @@
     border-radius: 50px;
 }
 
-.popup img[name="pfp"] {
+.popup img[name="pfp"]{
     display: block;
     width: 100px;
     position: relative;
@@ -130,7 +144,7 @@
     margin-bottom: 40px;
 }
 
-.popup div[name="info"] {
+.popup div[name="info"]{
     display: block;
     position: relative;
     left: 50%;
@@ -144,21 +158,20 @@
     text-align: center;
 }
 
-.popup span[name="date"],
-span[name="name"] {
+.popup span[name="date"], span[name="name"]{
     font-weight: bold;
     text-align: center;
 }
 
-.popup span[name="date"] {
-    position: relative;
+.popup span[name="date"]{
+    position:relative;
     left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.popup textarea {
+.popup textarea{
     position: relative;
     margin-top: 30px;
     left: 50%;
@@ -166,7 +179,7 @@ span[name="name"] {
     resize: none;
 }
 
-.popup div[name="buttons"] {
+.popup div[name="buttons"]{
     display: flex;
     justify-content: center;
     width: 250px;
@@ -177,31 +190,49 @@ span[name="name"] {
     transform: translate(-50%);
 }
 
-.popup div[name="buttons"] button {
+.popup div[name="buttons"] button{
     font-weight: bold;
     border-radius: 5px;
     margin-left: 2px;
     margin-right: 2px;
 }
 
-.popup div[name="buttons"] button:hover {
+.popup div[name="buttons"] button:hover{
     cursor: pointer;
 }
 
-.popup button[name="accept"] {
-    background-color: rgb(87, 223, 87);
+.popup button[name="accept"]{
+    background-color: rgb(69, 180, 69);
 }
 
-.popup button[name="accept"]:hover {
-    background-color: rgb(64, 173, 64);
+.popup button[name="accept"]:hover{
+    background-color: rgb(89, 219, 89);
 }
 
-.popup button[name="decline"] {
-    background-color: rgb(226, 68, 40);
+.popup button[name="decline"]{
+    background-color: rgb(182, 72, 53);
 }
 
-.popup button[name="decline"]:hover {
-    background-color: rgb(179, 53, 31);
+.popup button[name="decline"]:hover{
+    background-color: rgb(224, 89, 65);
+}
+
+.popup div[name="chosentimeslot"]{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+.popup div[name="chosentimeslot"] div{
+    width: fit-content;
+    font-weight: bold;
+}
+
+.popup form p {
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -294,7 +325,7 @@ span[name="name"] {
 
 
 
-/*============================================  /MEETINGS==============================================*/
+/*============================================REQUESTS/MEETINGS==============================================*/
 .requestsbox {
     display: block;
     width: 350px;
@@ -435,4 +466,5 @@ button:hover span:after {
 
 
 
+/* END MENTOR HOME */
 /* END MENTOR HOME */
