@@ -345,11 +345,12 @@
 
     display: block;
     width: 100%;
-    height: 600px;
+    height: 700px;
     position: relative;
 
     border-radius: 20px;
     border-style: solid;
+
 }
 
 
@@ -385,8 +386,8 @@ p[name="your-meetings-text"] {
     height: 560px;
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    margin-top: 15px;
 }
 
 .meeting img {
