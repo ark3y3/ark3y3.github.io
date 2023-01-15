@@ -57,7 +57,7 @@
         max-height: 400px;
         width: 100%;
         margin-bottom: 2%;
-        background-color: rgb(157, 175, 154);
+        background-color: rgb(136, 175, 129);
         overflow: hidden;
 
         border: none;
@@ -100,7 +100,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr 600px;
+        grid-template-rows: 1fr 600px 100px;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         row-gap: 3%;
@@ -141,7 +141,7 @@
         margin-top: 1%;
         margin-bottom: 2%;
         width: 1200px;
-        background-color: rgb(157, 175, 154);
+        background-color: rgb(136, 175, 129);
         overflow: hidden;
         border: none;
         max-height: 25%;
@@ -229,8 +229,7 @@
 
 .popup {
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    display: none;
 
     border-style: solid;
     border-radius: 10px;
@@ -239,9 +238,8 @@
     top: 40%;
     transform: translate(-50%, -50%);
     background-color: rgb(136, 175, 129);
-    min-width: 25%;
+    width: 450px;
 
-    display: none;
 }
 
 
@@ -265,49 +263,50 @@
     left: 50%;
     top: 20px;
     transform: translate(-50%);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.popup hr {
+    margin: 10px;
 }
 
 .popup-name {
     display: block;
     position: relative;
     text-align: center;
-    margin-bottom: 5px;
     overflow: auto;
+}
+
+.popup-name h1 {
+    margin-bottom: 0px;
+}
+
+.popup-name h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .popup-info {
     display: block;
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
     overflow: auto;
 }
 
-.popup-info input {
-    width: 30%;
-    height: 20px;
-    border-radius: 15px;
-    border: 3px gray solid;
-    font-size: 17px;
-    text-align: center;
-    padding: 7px;
+.popup-info p {
+    margin: 0px;
+    margin-top: 2px;
 }
 
-.popup-info textarea {
-    width: 50%;
-    height: 50px;
-    border-radius: 15px;
-    border: 3px gray solid;
-    font-size: 17px;
-    text-align: center;
-    padding: 7px;
+
+.popup-info strong {
+    font-size: 20px;
 }
 
 
 .button {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .button button {
@@ -328,4 +327,151 @@
 
 .button button:hover {
     background-color: rgb(64, 173, 64);
+}
+
+@media screen and (max-width: 1099px) {
+    .popup {
+
+        width: 350px;
+
+
+    }
+
+}
+
+
+.meetings-box {
+    grid-area: 3 / 2 / 3 / 5;
+
+    display: block;
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    border-radius: 20px;
+    border-style: solid;
+
+}
+
+
+p[name="your-meetings-text"] {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meeting {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px;
+
+    width: 100%;
+    min-height: 130px;
+    height: auto;
+    background-color: rgb(136, 175, 129);
+    position: relative;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.meetings {
+    display: block;
+    overflow: auto;
+    width: 75%;
+    height: 560px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 15px;
+}
+
+.meeting img {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    height: 50px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 5px;
+}
+
+
+.meeting p {
+    position: relative;
+    text-align: center;
+}
+
+.meeting p[name="name"] {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    top: 5px;
+}
+
+.meeting p[name="date"] {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting p[name="description"] {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting button {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 2px;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.meeting button:hover {
+    width: 56px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.meeting span {
+    position: relative;
+    transition: 0.2s;
+    left: 4px;
+}
+
+.meeting span::after {
+    content: '\25bc';
+    position: relative;
+    opacity: 0;
+    right: -3px;
+    transition: 0.3s;
+}
+
+button:hover span {
+    padding-right: 15px;
+    transition: 1s;
+}
+
+button:hover span:after {
+    opacity: 1;
+    left: 2px;
+    display: unset;
 }

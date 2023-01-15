@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/menteehomestyle.css">
-    <title>Document</title>
+    <title>Home mentee</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,12 +48,18 @@
     
             <fieldset>
                 <legend>Job category</legend>
-                    <input type="checkbox" id="html" name="html" checked>
-                    <label for="html">html</label>
+                    <input type="checkbox" id="frond-end" name="frond-end" checked>
+                    <label for="frond-end">frond-end</label>
             
-                    <input type="checkbox" id="css" name="css">
-                    <label for="css">css</label>
+                    <input type="checkbox" id="back-end" name="back-end">
+                    <label for="back-end">back-end</label>
     
+            </fieldset>
+
+            <fieldset>
+                <legend>Company</legend>
+                <input type="text" id="Company" name="Company" placeholder="Google">
+                    
             </fieldset>
     
             <fieldset>
@@ -111,10 +117,54 @@
                 <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
             </button>
 
-        </div>
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+        </div>       
         
-      </div> 
+        <div class="meetings-box">
+            <p name="your-meetings-text">YOUR MEETINGS</p>
+            <hr>
+            <div class="meetings">
+                
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
 
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+            </div>
+    </div>
 
     <div class="popup" id="popup">
         <div class="popup-close">
@@ -125,30 +175,34 @@
 
         <div class="popup-name">
             <h1>Mentor name</h1>
+            <h2>★★★★☆</h2>
         </div>
-            
-        <div class="popup-info">
-            <label for="meetingdate">Date</label>     
-            <br>   
-            <input type="date" id="meetingdate" name="meetingdate">
-        </div>
+        
+        <hr>
 
         <div class="popup-info">
-            <label for="meetingtime">Time</label>       
-            <br>    
-            <input type="time" id="meetingtime" name="meetingtime">
+            <strong>Skills:</strong>
+            <p>CSS, HTML, JAVASCRIPT</p>
+            <br>
+            <strong>Job category:</strong>
+            <p>Front-end developer</p>
+            <br>
+            <strong>Copmpany:</strong>
+            <p>Pear</p>
+            <br>
+            <strong>Location:</strong>
+            <p>Delft</p>
+            <br>
+            <strong>Available dates:</strong>
+            <p>Thursday at 9:00 AM and Friday at 10:00 AM </p>
         </div>
 
-        <div class="popup-info">
-            <label for="purpose">Purpose</label>
-            <br>   
-            <textarea placeholder="Purpose of the meeting"></textarea>
-        </div>
+        <hr>
 
         <div class="button">
             <button name="Request" onclick=closepopup()>Request</button>
         </div>
-        
+       
     </div>
 
     <script>
