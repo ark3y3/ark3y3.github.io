@@ -35,7 +35,11 @@
 .boxed {
     display: block;
     height: 40px;
-    width: 200px;
+}
+
+.sign-up-type {
+    position: relative;
+    left: 20%;
 }
 
 input[type="submit"] {
