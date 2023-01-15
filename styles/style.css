@@ -26,6 +26,7 @@ hr {
 input[type="submit"],
 button {
   transition: all 0.25s;
+  color: black; /*color will change on several devices, so this is to avoid this*/
 }
 
 

@@ -22,7 +22,7 @@
     }
 
     .requestsbox {
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     .popup {
@@ -31,19 +31,29 @@
         max-height: 500px;
     }
 
-    .popup div[name="info"]{
+    .popup div[name="info"] {
         width: 300px;
         max-height: 200px;
     }
 
     .popup textarea {
-        width: 280px;
+        width: 260px;
         height: 60px;
     }
 
     .popup div[name="buttons"] button{
         width: 70px;
         height: 40px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: fit-content;  
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+    .popup div[name="chosentimeslot"] div{
+        margin-top: 10px;
     }
 
 }
@@ -79,13 +89,19 @@
     }
 
     .popup textarea{
-        width: 580px;
+        width: 500px;
         height: 50px;
     }
 
     .popup div[name="buttons"] button{
         width: 100px;
         height: 50px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: 350px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
 }
@@ -101,8 +117,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(136, 175, 129);
-
-
     display: none;
 }
 
@@ -188,19 +202,37 @@
 }
 
 .popup button[name="accept"]{
-    background-color: rgb(87, 223, 87);
+    background-color: rgb(69, 180, 69);
 }
 
 .popup button[name="accept"]:hover{
-    background-color: rgb(64, 173, 64);
+    background-color: rgb(89, 219, 89);
 }
 
 .popup button[name="decline"]{
-    background-color: rgb(226, 68, 40);
+    background-color: rgb(182, 72, 53);
 }
 
 .popup button[name="decline"]:hover{
-    background-color: rgb(179, 53, 31);
+    background-color: rgb(224, 89, 65);
+}
+
+.popup div[name="chosentimeslot"]{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+.popup div[name="chosentimeslot"] div{
+    width: fit-content;
+    font-weight: bold;
+}
+
+.popup form p {
+    text-align: center;
+    margin-top: 20px;
 }
 
 
