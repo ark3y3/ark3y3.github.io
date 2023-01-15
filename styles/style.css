@@ -113,15 +113,14 @@ body {
   }
 
   .profilename {
-
     background-color: rgb(136, 175, 129);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 1fr;
-    height: 100px;
+    grid-template-rows: 70px 1fr;
     flex-direction: row;
     position: relative;
     left: 50%;
+    margin-top: -20px;
     transform: translate(-50%);
     padding-bottom: 20px
   }
@@ -131,7 +130,7 @@ body {
     grid-row: 1;
     width: 50px;
     border-radius: 50px;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
