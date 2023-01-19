@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <div class="header">
         <a href="index.html"><img src="images/logo+text.png" alt="Logo"></a>
 
@@ -25,7 +25,7 @@
     <div class="container">
         <p>Please fill out the form below to register a new account</p>
         <div class="formlist">
-        <form action="">
+        <form action="" id="form">
 
         
             <div class="sign-up-type">
@@ -117,6 +117,22 @@
         </div>
     </div>
 
+
+    <script>
+        var keypresses = 0;
+        var keys = document.getElementById("form");
+        keys.addEventListener('keypress', function() {
+            keypresses++;
+            console.log("keypresses: "+keypresses);
+        });
+
+        var clicks = 0;
+        var click = document.getElementById("body");
+        click.addEventListener('click', function() {
+            clicks++;
+            console.log("clicks: "+clicks)
+        })
+    </script>
 
 </body>
 
