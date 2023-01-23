@@ -1,0 +1,470 @@
+/* MENTOR HOME */
+
+@media screen and (max-width: 1099px) {
+    .mentorhome {
+        display: grid;
+    }
+
+    .homeheader {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .calendar {
+        display: block;
+        width: 350px;
+        position: relative;
+        left: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transform: translate(-50%);
+    }
+
+    .requestsbox {
+        margin-top: 100px;
+    }
+
+    .popup {
+        width: 350px;
+        min-height: 400px;
+        max-height: 500px;
+    }
+
+    .popup div[name="info"] {
+        width: 300px;
+        max-height: 200px;
+    }
+
+    .popup textarea {
+        width: 260px;
+        height: 60px;
+    }
+
+    .popup div[name="buttons"] button{
+        width: 70px;
+        height: 40px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: fit-content;  
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+    .popup div[name="chosentimeslot"] div{
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .mentorhome {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .calendar {
+        display: block;
+        width: 350px;
+        position: relative;
+        left: 50%;
+        top: 60px;
+        transform: translate(-50%);
+
+    }
+
+    .requestsbox {
+        margin-top: 90px;
+    }
+
+    .popup {
+        width: 700px;
+        height: 500px;
+    }
+
+    .popup div[name="info"]{
+        width: 600px;
+        max-height: 260px;
+    }
+
+    .popup textarea{
+        width: 500px;
+        height: 50px;
+    }
+
+    .popup div[name="buttons"] button{
+        width: 100px;
+        height: 50px;
+    }
+
+    .popup div[name="chosentimeslot"]{
+        width: 350px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+/*============================================POPUPS==============================================*/
+.popup {
+    position: fixed;
+    display: block;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(136, 175, 129);
+    display: none;
+}
+
+
+.popup img[name="close"]:hover {
+    cursor: pointer;
+}
+
+.popup img[name="close"] {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 50px;
+}
+
+.popup img[name="pfp"]{
+    display: block;
+    width: 100px;
+    position: relative;
+    border-radius: 50px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    margin-bottom: 40px;
+}
+
+.popup div[name="info"]{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 90px;
+    overflow: auto;
+}
+
+.popup span {
+    display: block;
+    text-align: center;
+}
+
+.popup span[name="date"], span[name="name"]{
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup span[name="date"]{
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup textarea{
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    resize: none;
+}
+
+.popup div[name="buttons"]{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.popup div[name="buttons"] button{
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.popup div[name="buttons"] button:hover{
+    cursor: pointer;
+}
+
+.popup button[name="accept"]{
+    background-color: rgb(69, 180, 69);
+}
+
+.popup button[name="accept"]:hover{
+    background-color: rgb(89, 219, 89);
+}
+
+.popup button[name="decline"]{
+    background-color: rgb(182, 72, 53);
+}
+
+.popup button[name="decline"]:hover{
+    background-color: rgb(224, 89, 65);
+}
+
+.popup div[name="chosentimeslot"]{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+.popup div[name="chosentimeslot"] div{
+    width: fit-content;
+    font-weight: bold;
+}
+
+.popup form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*============================================CALENDAR==============================================*/
+.calendar p[name="announce"] {
+    position: relative;
+    font-weight: bold;
+}
+
+.calendar input[type="submit"] {
+    position: relative;
+    font-weight: bold;
+    width: 340px;
+    height: 50px;
+    top: 135px;
+    left: 10px;
+    background-color: rgb(136, 175, 129);
+    border-radius: 5px;
+}
+
+.calendar input[type="submit"]:hover {
+    background-color: rgb(100, 214, 110);
+    cursor: pointer;
+}
+
+.timeframes {
+    display: grid;
+    width: 350px;
+    height: 400px;
+    grid-template-columns: 4fr repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    top: -15px;
+}
+
+
+.timeframes input[type="checkbox"] {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
+.coltimeframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.coltimelabels {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.timeframes .coltimeframes p {
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+
+.coltimelabels p {
+    place-self: center;
+}
+
+
+/*============================================HOMEHEADER==============================================*/
+.homeheader {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.homeheader p {
+    text-align: center;
+}
+
+.homeheader p[name="announcement"] {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.homeheader span:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*============================================REQUESTS/MEETINGS==============================================*/
+.requestsbox {
+    display: block;
+    width: 350px;
+    height: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    border-style: solid;
+}
+
+p[name="meetings"] {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 620px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.meeting {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 60px;
+
+    width: 300px;
+    min-height: 130px;
+    height: auto;
+    background-color: rgb(136, 175, 129);
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.requests {
+    display: block;
+    overflow: auto;
+    width: 330px;
+    height: 560px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.meeting img {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    height: 50px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 5px;
+}
+
+.meeting p {
+    position: relative;
+    text-align: center;
+}
+
+.meeting p[name="name"] {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    top: 5px;
+}
+
+.meeting p[name="date"] {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting p[name="description"] {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.meeting button {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 2px;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.meeting button:hover {
+    width: 56px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.meeting span {
+    position: relative;
+    transition: 0.2s;
+    left: 4px;
+}
+
+.meeting span::after {
+    content: '\25bc';
+    position: relative;
+    opacity: 0;
+    right: -3px;
+    transition: 0.3s;
+}
+
+button:hover span {
+    padding-right: 15px;
+    transition: 1s;
+}
+
+button:hover span:after {
+    opacity: 1;
+    left: 2px;
+    display: unset;
+}
+
+
+
+
+
+
+
+/* END MENTOR HOME */
+/* END MENTOR HOME */

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menteehomestyle.css">
+    <title>Home mentee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo+text.png" alt="Logo"></a>
+        
+    </div>
+    <div class="profilename">
+        <span><nobr>[FIRSTNAME LASTNAME]</nobr></span>
+        <img src="images/decoy.jpg" alt="profilepixture">
+    </div>
+    <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
+
+    
+
+
+    
+    <div class="grid-container">
+        <div class="search-filter-text">
+            <h2>Filters</h2>
+        </div>
+        
+        <div class="search-filter">
+            <fieldset>
+                <legend>Required skills</legend>
+                    <input type="checkbox" id="html" name="html" checked>
+                    <label for="html">html</label>
+            
+                    <input type="checkbox" id="css" name="css">
+                    <label for="css">css</label>
+    
+                    <input type="checkbox" id="javascript" name="javascript">
+                    <label for="javascript">javascript</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Job category</legend>
+                    <input type="checkbox" id="frond-end" name="frond-end" checked>
+                    <label for="frond-end">frond-end</label>
+            
+                    <input type="checkbox" id="back-end" name="back-end">
+                    <label for="back-end">back-end</label>
+    
+            </fieldset>
+
+            <fieldset>
+                <legend>Company</legend>
+                <input type="text" id="Company" name="Company" placeholder="Google">
+                    
+            </fieldset>
+    
+            <fieldset>
+                <legend>Ratings</legend>
+    
+                <label class="rating-label">
+                    min rating
+    
+                    <input
+                        class="rating"
+                        max="5"
+                        oninput="this.style.setProperty('--value', this.value)"
+                        step="0.5"
+                        type="range"
+                        value="1">
+                    </label>
+                    
+                
+            </fieldset>
+    
+            <fieldset>
+                <legend>Location</legend>
+                
+                <input type="text" id="location" name="location" placeholder="Delft">
+                    
+            </fieldset>
+    
+            
+        </div>
+
+        <div class="search-bar">
+            <input type="search" id="mentor-search" name="q">
+            <button id="mentor-search-button" >Search</button>
+        </div>
+
+        <div class="search-results" onclick="openpopup()">
+            <button class="mentor-result">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+            
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+            <button class="mentor-result" onclick="openpopup()">
+                <div class="result-preview-picture"><img src="images/decoy.jpg" alt="Mentor Profile Picture"> </div>
+                <div class="result-preview-name"><h1>mentorname</h1></div>
+                <div class="result-preview-ratings"><h2>★★★★☆</h2></div>
+                <div class="result-preview-avaible-dates"><h2>available on Thursday at 9:00 AM and Friday at 10:00 AM </h2> </div>
+            </button>
+        </div>       
+        
+        <div class="meetings-box">
+            <p name="your-meetings-text">YOUR MEETINGS</p>
+            <hr>
+            <div class="meetings">
+                
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-close">
+            <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
+        </div>
+            
+        <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
+
+        <div class="popup-name">
+            <h1>Mentor name</h1>
+            <h2>★★★★☆</h2>
+        </div>
+        
+        <hr>
+
+        <div class="popup-info">
+            <strong>Skills:</strong>
+            <p>CSS, HTML, JAVASCRIPT</p>
+            <br>
+            <strong>Job category:</strong>
+            <p>Front-end developer</p>
+            <br>
+            <strong>Copmpany:</strong>
+            <p>Pear</p>
+            <br>
+            <strong>Location:</strong>
+            <p>Delft</p>
+            <br>
+            <strong>Available dates:</strong>
+            <p>Thursday at 9:00 AM and Friday at 10:00 AM </p>
+        </div>
+
+        <hr>
+
+        <div class="button">
+            <button name="Request" onclick=closepopup()>Request</button>
+        </div>
+       
+    </div>
+
+    <script>
+        var popup = document.getElementById("popup");
+
+
+        function openpopup() {
+            popup.style.display = "unset";
+        }
+
+        function closepopup() {
+            popup.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

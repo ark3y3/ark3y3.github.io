@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/signupstyle.css">
+    <title>Sign up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="header">
+        <a href="index.html"><img src="images/logo+text.png" alt="Logo"></a>
+
+    </div>
+    <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
+
+    <div class="container">
+        <p>Please fill out the form below to register a new account</p>
+        <div class="formlist">
+        <form action="" id="form">
+
+        
+            <div class="sign-up-type">
+                <input type="radio" id="mentor" name="sign-up-type" value="HTML" required>
+                <label for="mentor">Mentor</label><br>
+                <input type="radio" id="mentee" name="sign-up-type" value="CSS">
+                <label for="mentee">Mentee</label>
+            </div>
+        
+
+            <br>
+
+            <!-- gebruik placeholder attribute voor een placeholder-->
+            <label for="userid">User-id</label> <br>
+            <input type="text" id="userid" name="userid" placeholder="Choose a user-id" pattern="[A-Z].{0,10}[^A-Za-z ]" required>
+
+            <br>
+
+            <label for="name">Name</label> <br>
+            <input type="text" id="username" name="username" placeholder="Your name" pattern="{0,10}[A-Za-z]" required>
+
+            <br>
+
+            <label for="useremail">E-mail</label> <br>
+            <input type="email" id="useremail" name="useremail" placeholder="Your e-mail address" required>
+
+            <br>
+
+            <label for="password">Password</label> <br>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required>
+
+            <br>
+
+            <label for="confirmpassword">Confirm password</label> <br>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" required>
+
+            <br>
+
+            <label for="address">Address</label> <br>
+            <input type="text" id="address" name="address" placeholder="Your address">
+
+            <br>
+
+            
+            <label for="country">Country</label> <br>
+            <input list="country" name = "datalist" placeholder="Your country of residence" pattern="{0,15}[A-Za-z]" required>
+  
+            <datalist id="country">
+            <option value="Netherlands" />
+            <option value="Germany" />
+            </datalist>
+
+
+            <br>
+
+            <label for="zipcode">Zipcode</label> <br>
+            <input type="text" id="zipcode" name="zipcode" placeholder="Your zipcode / postal code" pattern="[0-9][0-9][0-9][0-9][A-Z][A-Z]">
+
+            <br>
+
+            <label for="language">Language</label> <br>
+            <input type="text" id="language" name="language" placeholder="Your main language" pattern="{0,10}[A-Za-z]" required>
+
+            <br>
+
+            <label for="description">Bio (short desctiption)</label> <br>
+            <textarea maxlength="250" type="text" id="description" name="description" placeholder="Please provide a short description about yourself, i.e. skills, professions, hobbies, ..."></textarea>
+
+            <br>
+
+            <div class="boxed" name="gender">
+                <div style="position: absolute; left: 50%; transform: translate(-50%);">
+                    <label for="sex">Sex</label><br>
+                    <input type="radio" id="Male" name="sex" value="Male" required>
+                    <label for="Male">Male</label><br>
+                    <input type="radio" id="Female" name="sex" value="Female">
+                    <label for="Female">Female</label><br>
+                    <input type="radio" id="Other" name="sex" value="Other">
+                    <label for="Other">Other</label><br>
+                </div>
+            </div>
+
+
+
+            <br><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+        </div>
+
+        <script type="text/javascript" src="signupscript.js"></script>
+    </div>
+
+
+    
+
+</body>
+
+</html>

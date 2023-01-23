@@ -1,0 +1,152 @@
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  height: 120px;
+  background-color: rgb(136, 175, 129);
+}
+
+.header a {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header img, .header a {
+  width: 175px;
+}
+
+/* !!! */
+
+
+input[type="submit"],
+button {
+  transition: all 0.25s;
+  color: black; /*color will change on several devices, so this is to avoid this*/
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+}
+
+/* CURSOR STYLE */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+  position: relative;
+  left: 10px
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(99, 128, 94);
+  border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+  .header {
+    display: block;
+  }
+
+  .profilename {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-rows: 1fr;
+    width: 300px;
+    height: 70px;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+
+  .profilename img {
+    grid-column: 2;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .profilename span {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@media screen and (max-width: 1099px) {
+  .header {
+    display: block;
+    background-color: rgb(136, 175, 129);
+  }
+
+  .profilename {
+    background-color: rgb(136, 175, 129);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    margin-top: -20px;
+    transform: translate(-50%);
+    padding-bottom: 20px
+  }
+
+  .profilename img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .profilename span {
+    grid-row: 2;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+/* MENTEE HOME */
+
+
+
+/* END MENTEE HOME */

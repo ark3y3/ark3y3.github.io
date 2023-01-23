@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mentorhomestyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo+text.png" alt="Logo"></a>
+    </div>
+
+    <div class="profilename">
+        <span>
+            <nobr>[FIRSTNAME LASTNAME]</nobr>
+        </span>
+        <img src="images/decoy.jpg" alt="profilepixture">
+    </div>
+    
+    <hr>
+    <!-- tot hier dus (<hr> is het streepje) -->
+
+    
+
+
+    <div class="mentorhome">
+        <form class="calendar">
+            <p name="announce" style="text-align: center;">Select your available time slots (1h) below:</p>
+            <div class="timeframes">
+
+                <div class="coltimelabels" id="time" name="time">
+                    <p>time\day</p>
+                    <p>9:00 AM</p>
+                    <p>10:00 AM</p>
+                    <p>11:00 AM</p>
+                    <p>12:00 PM</p>
+                    <p>1:00 PM</p>
+                    <p>2:00 PM</p>
+                    <p>3:00 PM</p>
+                    <p>4:00 PM</p>
+                    <p>5:00 PM</p>
+                </div>
+
+                <div class="coltimeframes" id="mon" name="mon">
+                    <p>Mon</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="tue" name="tue">
+                    <p>Tue</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="wed" name="wed">
+                    <p>Wed</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="thu" name="thu">
+                    <p>Thu</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+
+                <div class="coltimeframes" id="fri" name="fri">
+                    <p>Fri</p>
+                    <input type="checkbox" id="9">
+                    <input type="checkbox" id="10">
+                    <input type="checkbox" id="11">
+                    <input type="checkbox" id="12">
+                    <input type="checkbox" id="13">
+                    <input type="checkbox" id="14">
+                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="16">
+                    <input type="checkbox" id="17">
+                </div>
+            </div>
+
+            <input type="submit" value="Submit chosen times" />
+        </form>
+
+
+        <div class="homeheader">
+            <p name="announcement">Welcome to the<br>MentorHomepage</p>
+            <p name="information">Please select your available <br> timeslots on the left/top of this page.
+                <br> You can select 1 hour timeslots, if you <br> need a shorter timeslot,
+                <br> then you can adress this in the
+                <br> meeting confirmation.
+                <br>
+                <br>
+                You'll be able to see your <br> upcoming meetings with mentees <br> on the right/bottom of this page.
+                <br>
+                <br>
+                The first 2 info buttons in the<br>meetings section
+                work. <br><span onclick="openpopup()"><b>Click here to test pop-up!!!</b></span><br>
+                Better things are <br> <b>coming soon ;)</b>
+            </p>
+        </div>
+
+        <div class="requestsbox">
+            <div class="requests">
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                    <button onclick="closedesc('description')"><span>info</span></button>
+                    <p name="description" id="description"><b>Description:</b> Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="meeting">
+                    <img src="images/decoy.jpg" alt="pf">
+                    <p name="name">[FirstName LastName]</p>
+                    <p name="date">22-12-2022 at 15:00 till 16:00</p>
+                    <button onclick="closedesc('description2')"><span>info</span></button>
+                    <p name="description" id="description2" style="display: none;">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+
+
+
+            </div>
+
+            <p name="meetings">YOUR MEETINGS</p>
+        </div>
+
+    </div>
+
+
+
+    <!---------------------------------------------- POPUP ----------------------------------->
+    <div class="popup" id="popup">
+        <img src="images/decoy.jpg" alt="close" name="close" onclick="closepopup()">
+        <img src="images/decoy.jpg" alt="profilepicture" name="pfp">
+        <div name="info">
+            <span name="name">[Firstname Lastname] (Mentee)</span>
+            <span name="date">Meeting request
+                <br>Requested time: 16:00 till 17:00
+                <br>Requested date: December 11 2022
+            </span>
+            <span name="description">
+                <b>Description:</b> Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor. 
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+            </span>
+
+
+        <form> <!-- Start form for the accept button -->
+                <textarea placeholder="Purpose of meeting" required></textarea>
+                <p>Please select your chosen timeslot below...</p>
+                <div name="chosentimeslot">
+                    <div><label>From: </label><input type="time" required></div>
+                    <div><label>Till: </label><input type="time" required></div>
+                </div>
+        </div> <!-- Note that above items are inside a scroll box!!!!-->
+            <div name="buttons">
+                <button name="accept" type="submit">Accept</button>
+                <button name="decline" onclick=closepopup()>Decline</button>
+            </div>
+        </form>
+
+
+    </div>
+    <!---------------------------------------------- END POPUP ----------------------------------->
+
+    <script>
+        var description = document.getElementById("description");
+        var popup = document.getElementById("popup");
+
+        function closedesc(id) {
+            if (document.getElementById(id).style.display == "none") {
+                document.getElementById(id).style.display = "unset";
+            }
+            else {
+                document.getElementById(id).style.display = "none";
+            }
+        }
+
+        function openpopup() {
+            popup.style.display = "unset";
+        }
+
+        function closepopup() {
+            popup.style.display = "none";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

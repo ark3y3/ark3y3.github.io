@@ -1,0 +1,106 @@
+/* SIGN IN PAGE */
+
+.txtsign {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.signin-box {
+    display: block;
+    width: 360px;
+    height: 420px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    position: relative;
+    top: 10px;
+    left: calc(50%);
+    transform: translate(-50%);
+    border-radius: 20px;
+}
+
+.signin-box .forgot-button {
+    position: absolute;
+    top: 430px;
+    left: 10px;
+}
+
+.signin-box .signup-button {
+    position: absolute;
+    top: 430px;
+    right: 10px;
+}
+
+.signin-box a {
+    color: gray;
+}
+
+.signin-box a:hover {
+    color: rgb(14, 119, 19);
+}
+
+.signin-form {
+    margin: auto;
+    margin-top: 70px;
+}
+
+.signin-form input[type="submit"] {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    width: 100px;
+    height: 44px;
+    transform: translate(-50%);
+    border-radius: 60px;
+    background-color: rgb(136, 175, 129);
+    padding: 10px 16px 10px;
+    font-weight: bold;
+}
+
+.signin-form input[type="submit"]:hover {
+    background-color: rgb(100, 214, 110);
+    cursor: pointer;
+    width: 110px;
+}
+
+
+.signin-type {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+}
+
+.signin-type input:hover {
+    cursor: pointer;
+}
+
+.logininfo {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logininfo label {
+    font-weight: bold;
+}
+
+.logininfo input[type="text"],
+input[type="password"] {
+    margin-bottom: 30px;
+    margin-top: 8px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(8, 110, 13);
+}
+
+.redirect {
+    position: relative;
+    margin-top: 100px;
+}
+
+
+/* END SIGN IN PAGE */
