@@ -42,7 +42,7 @@
     left: 20%;
 }
 
-input[type="submit"] {
+input[type="button"] {
     position: relative;
     width: 100px;
     height: 44px;
@@ -53,13 +53,14 @@ input[type="submit"] {
     padding: 10px 16px 10px;
     font-weight: bold;
     margin-top: 40px;
+    transition: 0.25s;
 }
 
 div[name="signin-type"] {
     margin-bottom: 20px;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: rgb(100, 214, 110);
     cursor: pointer;
     width: 110px;
