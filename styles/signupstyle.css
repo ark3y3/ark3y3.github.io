@@ -90,7 +90,21 @@ textarea:hover {
 }
 
 div[id="stats"]{
+    display: inline-block;
+    width: 400px;
+    height: 90px;
     position: absolute;
-    top: 150px;
-    left: 10px;
+    background-color: gray;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+div[id="stats"] span{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
