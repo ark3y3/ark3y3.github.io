@@ -88,3 +88,9 @@ input:hover,
 textarea:hover {
     background-color: rgb(136, 175, 129);
 }
+
+div[id="stats"]{
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
