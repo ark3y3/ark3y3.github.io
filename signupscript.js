@@ -18,8 +18,8 @@ keys.addEventListener('keypress', function() {      // keep track of keypresses 
 
 function onSubmit() {                               // function for the submit button to make code more easily understandable;
     var frm = document.getElementById("form");
-    frm.reset();                                    // we just reset the form because we dont actually submit the form yet, this submit function can be added later in a complete form
     showStats();                                    // call the stats function
+    frm.reset();                                    // we just reset the form because we dont actually submit the form yet, this submit function can be added later in a complete form
 }
 
 function showStats(){
@@ -49,18 +49,31 @@ function showStats(){
 
     clicks = 0;                                                     // reset the values
     keypresses = 0;
+
+    calcLength();
 }
 
 
 let startDate = new Date();                                         // the starting time
 let spentTime = 0;                                                  // the spent time
 
-const seeTime = function() {                                        // function to calculate spent time + log it
+function seeTime() {                                        // function to calculate spent time + log it
     const endDate = new Date();
     spentTime = endDate.getTime() - startDate.getTime();            // function to calculate the time
     spentTime = Math.round(spentTime/1000);                         // from milliseconds to seconds, and remove all decimals with Math.round()
-    console.log(spentTime);
+    console.log("time: " + spentTime);
 };
+
+
+
+function calcLength(){                                              // calculate the total amount of characters
+                                                                    // we just add all element lengths individually  
+    
+    var idLength = document.getElementById('userid').value;
+    console.log(idLength.length);
+}
+
+
 
 
 
